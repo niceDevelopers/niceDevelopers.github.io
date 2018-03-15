@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Fiany Blog">
 <meta property="og:description" content="由于我比较喜欢折腾，喜欢最新版的软件，最新版的系统，所以windows版本比较喜欢用预览版，所以这就导致了总是会遇到bug，可能就需要重装系统了，装系统倒是不麻烦，上面的软件才是最麻烦的，所以此文用来记录每次IDEA装好之后需要进行的配置，保证每次装好之后环境都一样的，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-12T14:06:24.450Z">
+<meta property="og:updated_time" content="2018-03-15T13:03:30.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新安装IDEA需要的设置">
 <meta name="twitter:description" content="由于我比较喜欢折腾，喜欢最新版的软件，最新版的系统，所以windows版本比较喜欢用预览版，所以这就导致了总是会遇到bug，可能就需要重装系统了，装系统倒是不麻烦，上面的软件才是最麻烦的，所以此文用来记录每次IDEA装好之后需要进行的配置，保证每次装好之后环境都一样的，">
@@ -375,7 +375,11 @@
       
         <p>由于我比较喜欢折腾，喜欢最新版的软件，最新版的系统，所以windows版本比较喜欢用预览版，所以这就导致了总是会遇到bug，可能就需要重装系统了，装系统倒是不麻烦，上面的软件才是最麻烦的，所以此文用来记录每次IDEA装好之后需要进行的配置，保证每次装好之后环境都一样的，</p>
 <a id="more"></a>
-<h1 id="设置工作环境的编码（默认都是utf-8"><a href="#设置工作环境的编码（默认都是utf-8" class="headerlink" title="设置工作环境的编码（默认都是utf-8)"></a>设置工作环境的编码（默认都是utf-8)</h1><h2 id="全局编码设置"><a href="#全局编码设置" class="headerlink" title="全局编码设置"></a>全局编码设置</h2><ul>
+<h1 id="设置工作环境的编码（默认都是utf-8"><a href="#设置工作环境的编码（默认都是utf-8" class="headerlink" title="设置工作环境的编码（默认都是utf-8)"></a>设置工作环境的编码（默认都是utf-8)</h1><h2 id="针对各种乱码的终极解决办法"><a href="#针对各种乱码的终极解决办法" class="headerlink" title="针对各种乱码的终极解决办法"></a>针对各种乱码的终极解决办法</h2><ul>
+<li>进入idea的安装目录, 进入bin目录下。找到idea.exe.vmoptions这个文件 和 idea64.exe.vmoptions，针对自己安装的版本修改：用记事本打开末尾添加如下字符</li>
+<li>-Dfile.encoding=UTF-8</li>
+</ul>
+<h2 id="全局编码设置"><a href="#全局编码设置" class="headerlink" title="全局编码设置"></a>全局编码设置</h2><ul>
 <li>File –&gt; Other Settings –&gt; Default Settings</li>
 <li>Edit –&gt;File Encodings (打开了这个页面，也不用我多说了，看到需要设置的都改了)</li>
 </ul>
@@ -619,7 +623,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置工作环境的编码（默认都是utf-8"><span class="nav-number">1.</span> <span class="nav-text">设置工作环境的编码（默认都是utf-8)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#全局编码设置"><span class="nav-number">1.1.</span> <span class="nav-text">全局编码设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#针对本项目的编码设置"><span class="nav-number">1.2.</span> <span class="nav-text">针对本项目的编码设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字体设置"><span class="nav-number">2.</span> <span class="nav-text">字体设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven设置"><span class="nav-number">3.</span> <span class="nav-text">Maven设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JDK设置"><span class="nav-number">4.</span> <span class="nav-text">JDK设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#取消编码过程中的大小写区分"><span class="nav-number">5.</span> <span class="nav-text">取消编码过程中的大小写区分</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置工作环境的编码（默认都是utf-8"><span class="nav-number">1.</span> <span class="nav-text">设置工作环境的编码（默认都是utf-8)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#针对各种乱码的终极解决办法"><span class="nav-number">1.1.</span> <span class="nav-text">针对各种乱码的终极解决办法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全局编码设置"><span class="nav-number">1.2.</span> <span class="nav-text">全局编码设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#针对本项目的编码设置"><span class="nav-number">1.3.</span> <span class="nav-text">针对本项目的编码设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字体设置"><span class="nav-number">2.</span> <span class="nav-text">字体设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven设置"><span class="nav-number">3.</span> <span class="nav-text">Maven设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JDK设置"><span class="nav-number">4.</span> <span class="nav-text">JDK设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#取消编码过程中的大小写区分"><span class="nav-number">5.</span> <span class="nav-text">取消编码过程中的大小写区分</span></a></li></ol></div>
             
 
           </div>
